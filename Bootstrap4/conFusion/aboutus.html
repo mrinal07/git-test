@@ -10,7 +10,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <!-- Bootstrap CSS -->
-    <link type="text/css" rel="stylesheet" href="css/style.css"  /> 
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -18,6 +18,32 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#Navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand">Ristorante Con Fusion</a>
+        <div class="collapse navbar-collapse" id="Navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <header class="jumbotron">
       <div class="container">
         <div class="row row-header">
@@ -35,15 +61,19 @@
     </header>
 
     <div class="container">
-      <div class="row  ">
-        <div class="col-12 col-sm-4  col-md-3">
+      <div class="row">
+        <ol class="col-12 breadcrumb">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active">About Us</li>
+        </ol>
+        <div class="col-12 col-sm-4 col-md-3">
           <h3>About Us</h3>
           <hr />
         </div>
       </div>
 
       <div class="row row-content">
-        <div class="col-12 col-sm-6 ">
+        <div class="col-12 col-sm-6">
           <h2>Our History</h2>
           <p>
             Started in 2010, Ristorante con Fusion quickly established itself as
@@ -64,7 +94,7 @@
       </div>
 
       <div class="row row-content align-items-center">
-        <div class="col-12 ">
+        <div class="col-12">
           <h2>Corporate Leadership</h2>
           <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
           <p class="d-none d-sm-block">
